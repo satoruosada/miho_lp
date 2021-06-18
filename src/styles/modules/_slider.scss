@@ -1,0 +1,29 @@
+
+
+.slider{
+  margin: 100px auto;
+  width: 100%;
+  padding-left: 0;
+  margin-top: 35px;
+  border-radius: 10px;
+  &__item {
+    display: block !important;
+  }
+}
+.slider img{
+  height: 250px;
+  width: 100%;
+ 
+}
+
+.slick-next .slick-prev  {
+  display: none;
+}
+.slick-arrow {
+  display: none;
+}
+.slick-list {
+  border-radius: 10px;
+}
+
+

@@ -1,0 +1,130 @@
+/******************************************************************
+Stylesheet: 1280px以上のモニタで適用
+******************************************************************/
+.header {
+
+    &__inner {
+        margin: 0 auto;
+       
+    }
+}
+
+.hero {
+    &__title {
+        &-heading {
+            font-size: 65px;
+        }
+        &-top {
+            display: block;
+            font-weight: normal;
+            line-height: 2;
+            font-size:18px;
+            top: -5px;
+        }
+    
+        &-miho {
+            
+            font-size: 200px;
+            padding-right: 30px;
+        }
+    }
+}
+
+.main {
+
+    &__image {
+        width: 400px;
+        margin-right: 30px;
+        & > img {
+            width: 100%;
+        }
+    }
+
+    &__images {
+        margin-right: 10px;
+
+        &-wrapper {
+            // width: 330px;
+        }
+    }
+    // &__image1 {
+    //     width: 21vw;
+    //     margin-right: auto;
+    // }
+    // &__image2 {
+    //     position: absolute;
+    //     top: -15vw;
+    //     left: 25vw;
+    //     width: 26vw;
+    // }
+    // &__image2 {
+    //     width: 460px;
+    //     position: relative;
+    //     top: -55px;
+        
+    // }
+    &__contents {
+        &-right {
+            padding-top: 13vw;
+        }
+    }
+    // &__image1 {
+    //     width: 25vw;
+    //     margin-right: auto;
+    //     padding-bottom: 250px;
+       
+
+    //     & > img {
+    //         margin-right: 30px;
+    //     }
+    // }
+}
+
+.concept {
+
+    &__backimages {
+        top: 21vh;
+    }
+
+    &__circle {
+        width: 50%;
+       
+        border-radius: 50%;
+        background-color: #71d5f3;
+        margin-left: 25%;
+        margin-bottom: 5px;
+
+        &-footer {
+            position: relative;
+            left: 1px;
+        }
+    }
+    &__inner {
+        position: relative;
+        width: 100%;
+
+        &::before {
+            display: block;
+            content: '';
+            position: absolute;
+            top: 35%;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+            background-color: #E1F1F8;
+        }
+    }
+}
+.activites {
+    &__maintitle {
+        font-size: 50px;
+        color: #6FABE2;
+    }
+    &__subtitle {
+        font-size: 20px;
+        color: #6FABE2;
+        margin-top: -10px;
+        margin-bottom: 35px;
+    }
+}

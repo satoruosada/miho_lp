@@ -1,0 +1,638 @@
+/******************************************************************
+Stylesheet: 600px以上のタブレットやモニタで適用
+******************************************************************/
+.flex {
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.content-width {
+    width: 90%;
+    margin: 0 auto;
+}
+
+.main-title {
+    font-size: 25px;
+    color: rgb(82, 156, 240);
+    font-weight: 600;
+    margin-bottom: 0;
+    display: block;
+    text-align: left;
+}
+.sub-title{
+    font-size: 10px;
+    color: rgb(148, 144, 144);
+    text-align: left;
+    display: block;
+}
+
+
+.p-text {
+    font-size: 12px;
+    text-align: left;
+    line-height: 1.5;
+}
+
+.section-title {
+    font-size: 20px;
+}
+
+.pc-section-title {
+    font-size: 20px;
+    color: black;
+    text-align: center;
+    margin-bottom: 30px;
+    position: relative;
+
+    &::after {
+        content: '';
+        position: absolute;
+        top: 30px;
+        left: 50%;
+        background-color: black;
+        width: 1px;
+        height: 30px;
+        margin: 10px 0;
+    }
+}
+
+
+// ヘッダー
+.header {
+
+    &__inner {
+        width: 90%;
+        align-items: center;
+    }
+    &__title {
+        font-size: 20px;
+    }
+    &__miho {
+        font-size: 38px;
+        padding-right: 10px;
+    }
+    &__span {
+        font-size: 12px;
+        display: block;
+    }
+
+}
+
+// ヒーローバナー
+// ヒーローバナー
+.hero {
+    background-image: url(../images/header_img.jpg);
+    background-repeat: no-repeat;
+    padding-top: 80px;
+    position: relative;
+    padding-left: 15%;
+    z-index: 12;
+    background-color: white;
+
+    &__images {
+       &-weave {
+           display: block;
+           position: absolute;
+           top: 150px;
+           left: 20px;
+           width: 20%;
+       }
+    }
+
+    &__title {
+        content: '';
+        color: #6FABE2;
+        position: absolute;
+        top: 60%;
+        left: 3%;
+        &-cover1 {
+            margin-top: -50px;
+        }
+
+        &-heading {
+            font-size: 50px;
+        }
+
+        &-top {
+            top: 10px;
+            left:0;
+            font-size: 12px;
+        }
+
+        &-miho {
+            font-size: 150px;
+            padding-right: 30px;
+        }
+        &-cover1 {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+        }
+        &-cover2 {
+            font-size: 17px;
+            height: 50px;
+            margin-bottom: 15px;
+        }
+    }
+}
+
+
+// メイン
+.main {
+    
+    padding-bottom: 50px;
+    position: relative;
+
+    .main-p {
+        font-size: 14px;
+    }
+
+    &__backimages {
+        position: absolute;
+        z-index: 1;
+        width: 100%;
+        height: 100%;
+        margin-top: 13%;
+    }
+    &__backimage {
+        &-map {
+            background-image: url(../images/map.png);
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+            width: 100%;
+            height: 130%;
+            position: absolute;
+            bottom: 0;
+            right: 0;
+        }
+        &-mapback {
+            background-image: url(../images/map_bak.jpg);
+            background-repeat: no-repeat;
+            background-size:100% auto;
+            background-position: center;
+            width: 80%;
+            height: 140%;
+            position: absolute;
+            bottom: 0;
+            right: 0;
+        }
+    }
+
+    &__round {
+        position: absolute;
+        top: calc(50% - 12vw);
+        left: 53%;
+        margin-top: -15px;
+        margin-left: -15px;
+    }
+
+    &__title {
+        &-top {
+            font-size: 15px;
+        }
+        &-under {
+            font-size: 22px;
+           
+        }
+    }
+
+    &__wrapper {
+        position: relative;
+        z-index: 11;
+        padding-top: 100px;
+    }
+
+    &__inner {
+        display: flex;
+        flex-direction: row;
+        align-items:flex-start;
+        width: 90%;
+        
+    }
+
+    &__contents {
+        &-left {
+           width: 50%;
+        }
+        &-right {
+            width: 50%;
+            padding-top: 15vw;
+        }
+    }
+    &__images {
+        &-wrapper {
+            display: block;
+        }
+
+        &-wrapper {
+            position: relative;
+        }
+    }
+    &__image1 {
+        width: 21vw;
+        margin-right: auto;
+    }
+    &__image2 {
+        position: absolute;
+        top: -15vw;
+        left: 25vw;
+        width: 26vw;
+    }
+
+}
+
+
+// コンセプト
+.concept {
+    /* padding-top: 150px;
+    margin-top: 70px; */
+
+    // 背景
+    &__backimages {
+        top: 20vh;
+    }
+    &__backimage {
+        z-index: 2;
+        position: relative;
+
+    }
+
+    &__title {
+        text-align: center;
+        
+
+        &-under {
+            font-size: 30px;
+            margin-top: 20px;
+        }
+        &-miho {
+            font-size: 53px;
+            
+            padding-left: 10px;
+        }
+    }
+
+    &__inner {
+        position: relative;
+
+    }
+
+    
+    &__images {
+        width: 47%;
+        height: 250px;
+    }
+    
+    &__text {
+        width: 47%;
+        text-align: left;
+        line-height: 2;
+        font-size: 14px;
+    }
+
+    &__menu {
+        flex-basis: 22%;
+        margin-bottom: 50px;
+    }
+
+    &__container {
+        width: 80%;
+        margin: 0 auto;
+    }
+
+    &__main {
+        &-wrapper {
+            justify-content: space-between;
+            flex-direction: row;
+        }
+    }
+
+
+
+    &__circle {
+        width: 70%;
+        border-radius: 50%;
+        background-color: #6FABE2;
+        margin-left: 25%;
+        margin-bottom: 5px;
+        &::after {
+            content: '';
+            position: absolute;
+            top: 20%;
+            left: 20%;
+            background-position: center;
+            background-size: contain;
+            width: 60%;
+            height: 60%;
+            background-repeat: no-repeat;
+        }
+
+        &-footer {
+            position: relative;
+            left: 15px;
+        }
+    }
+
+    &__circle1 {
+        width: 70%;
+        border-radius: 50%;
+        background-color: #6FABE2;
+        margin-left: 25%;
+        margin-bottom: 5px;
+        position: relative;
+        &::after {
+            content: '';
+            position: absolute;
+            top: 25%;
+            left: 30%;
+            background-image: url(../images/info.png);
+            background-position: center;
+            background-size: cover;
+            width: 50%;
+            height: 50%;
+        }
+    }
+
+    &__parallax {
+        height: 400px;
+    }
+}
+
+// アクティビティ
+.activites {
+    
+    margin-top: 0;
+    position: relative;
+
+    &__backimages {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        z-index: 1;
+    }
+
+    &__backimage {
+        background-image: url(../images/map_bak.jpg);
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position:center top;
+        width: 110%;
+        height: 100%;
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        box-sizing: content-box;
+        padding-top: 20vw;
+    }
+
+    &__bottomimage {
+        background-image: url(../images/map_bak.jpg);
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position:center bottom;
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        right: 0;
+        box-sizing: content-box;
+        padding-bottom: 40vw;
+    }
+
+    &__wrapper {
+        position: relative;
+        bottom: 65px;
+    }
+    
+    &__title {
+        margin-top: 80px
+    }
+
+    &__main {
+        width: 75%;
+        margin: 0 auto;
+        max-width: 1070px;
+    }
+
+
+    &__section {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        padding-bottom: 65px;
+        &:nth-child(odd) {
+            flex-direction: row-reverse;
+        }
+    }
+    
+    
+    &__info {
+        width: calc(50% - 25px);
+    }
+    &__image {
+        width: calc(50% - 25px);
+    }
+
+    &__maintitle {
+        font-size: 25px;
+        color:#6FABE2;
+    }
+    &__subtitle {
+        font-size: 14px;
+        color:#6FABE2;
+        padding-top: 5px;
+    }
+    &__text {
+        line-height: 2;
+        font-size: 14px;
+    }
+}
+
+
+// THE ENN
+.enn {
+    &__backimage {
+        z-index: 2;
+        position: relative;
+
+    }
+    &__inner {
+        width: 75%;
+        margin: 0 auto;
+        max-width: 1070px;
+    }
+
+    &__wrapper {
+        position: relative;
+        z-index: 11;
+    }
+    &__title {
+        &-under {
+            font-size: 60px;
+            font-weight: normal;
+        }
+        &-span {
+            font-size: 30px;
+        }
+    }
+
+    &__subtitle {
+        &-under {
+            font-size: 24px;
+            text-align: center;
+            margin-top: 20px;
+            margin-bottom: 20px;
+        }
+    }
+
+    & .slider {
+        display: none;
+    }
+
+    &__images {
+        margin-top: 50px;
+    }
+    &__main {
+        &-image {
+          width: 100%;
+          background-image: url(../images/enn_main.jpg);
+          background-position: center;
+          background-size: cover;
+          background-repeat: no-repeat;
+          border-radius: 10px;
+
+          &::before {
+            display: block;
+            content: '';
+            padding-top: 50%;
+            }
+        }
+    }
+
+    &__sub {
+        &-images {
+            margin-top: 40px;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+        }
+        &-image1 {
+            width: 31%;
+            background-image: url(../images/enn_sub1.jpg);
+            background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat;
+            border-radius: 10px;
+  
+            &::before {
+              display: block;
+              content: '';
+              padding-top: 75%;
+            }
+        }
+        &-image2 {
+            width: 31%;
+            background-image: url(../images/enn_sub2.jpg);
+            background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat;
+            border-radius: 10px;
+            &::before {
+                display: block;
+                content: '';
+                padding-top: 75%;
+            }
+  
+        }
+        &-image3 {
+            width: 31%;
+            background-image: url(../images/enn_sub3.jpg);
+            background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat;
+            border-radius: 10px;
+            &::before {
+                display: block;
+                content: '';
+                padding-top: 75%;
+            }
+  
+        }
+    }
+    &__text{
+        &-des {
+            font-size: 14px;
+        }
+    }
+}
+
+// アクセス
+.access {
+    position: relative;
+
+    &__backimages {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        z-index: 1;
+    }
+    &__inner {
+        width: 75%;
+        margin: 0 auto;
+        max-width: 1070px;
+    }
+
+    &__backimage {
+        background-image: url(../images/map_bak.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center top;
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        box-sizing: content-box;
+        padding-bottom: 40vw;
+    }
+    &__wrapper {
+        position: relative;
+        z-index: 11;
+    }
+   
+    &__title {
+        
+        &-under {
+            font-size: 26px;
+        }
+        &-span {
+            font-size: 54px;
+        }
+    }
+
+    &__text {
+        &-center {
+            text-align: center;
+        }
+    }
+
+    &__des {
+
+        &-text {
+            text-align: left;
+            font-size: 14px;
+        }
+    }
+}
+
+
+// フッター
+.footer {
+   
+}

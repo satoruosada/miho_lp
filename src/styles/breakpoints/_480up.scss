@@ -1,0 +1,25 @@
+/******************************************************************
+Stylesheet: 480px以上(スマホの横向き)のモニタで適用
+******************************************************************/
+// ヒーローバナー
+.hero {
+    
+    &__title {
+        
+        
+        /* &-cover1 {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-direction: column;
+        }
+        &-cover2 {
+            font-size: 2vw;
+            height: 50px;
+            padding-top: 20px;
+            
+        } */
+        
+    }
+}
+

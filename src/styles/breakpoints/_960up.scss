@@ -1,0 +1,258 @@
+/******************************************************************
+Stylesheet: 960px以上のモニタで適用
+******************************************************************/
+.main-title {
+    font-size: 35px;
+    color: rgb(82, 156, 240);
+    font-weight: 600;
+    margin-bottom: 0;
+    display: block;
+    text-align: left;
+}
+.sub-title{
+    font-size: 16px;
+    color: rgb(148, 144, 144);
+    text-align: left;
+    display: block;
+}
+
+.p-text {
+    font-size: 12px;
+    text-align: left;
+    line-height: 2.4;
+}
+
+.mobile-menu {
+    &__btn {
+        display: none;
+    }
+}
+
+
+// ヘッダー
+.header {
+
+    
+    &__title {
+        &-wrapper {
+            line-height: 1.2;
+        }
+    }
+    &__nav {
+        display: block;
+    }
+    &__span {
+        display: inline-block;
+    }
+}
+
+.hero {
+    &-cover1 {
+        flex-wrap:nowrap;
+    }
+    
+
+    &__title {
+        &-cover1 {
+            margin-top: -70px;
+        }
+        &-heading {
+            font-size: 60px;
+        }
+        &-top {
+            display: block;
+            font-weight: normal;
+            line-height: 2;
+            font-size:16px;
+            position: relative;
+            top: 0px;
+            left: 30px;
+        }
+    
+        &-miho {
+            font-size: 180px;
+            padding-right: 30px;
+        }
+    }
+
+}
+
+.main {
+
+    &__title {
+        &-top {
+            font-size: 18px;
+        }
+    }
+    .main-p {
+        font-size: 16px;
+    }
+
+    &__wrapper {
+        padding-left: 10%;
+    }
+
+    &__backimages {
+        margin-top: 100px;
+    }
+    &__inner {
+        position: relative;
+    }
+
+    &__contents {
+        &-right {
+            width: 60%;
+            
+        }
+    }
+
+    &__images {
+        &-wrapper {
+            display: block;
+        }
+
+        &-wrapper {
+            position: relative;
+        }
+    }
+}
+
+.concept {
+
+    &__backimages {
+        top: 23vh;
+    }
+
+    &__inner {
+        width: 100%;
+    }
+
+    &__title {
+
+        &-under {
+            font-size: 40px;
+           
+        }
+        &-miho {
+            font-size: 73px;
+            padding-left: 10px;
+        }
+    }
+
+    &__container {
+        width: 75%;
+        margin: 0 auto;
+        max-width: 1070px;
+    }
+
+
+
+    &__use {
+        &-inner {
+            justify-content: center;
+        }
+    }
+
+    &__menu {
+        width: 20%;
+    }
+
+    &__circle {
+        width: 60%;
+        border-radius: 50%;
+        background-color: #6FABE2;
+        margin-left: 20%;
+        margin-bottom: 5px;
+
+        &-footer {
+            font-size: 14px;
+            position: relative;
+            left: 3px;
+        }
+    }
+
+    &__text {
+        font-size: 16px;
+        line-height: 2.4;
+    }
+
+    &__parallax {
+        height: 600px;
+    }
+}
+
+// アクティビティ
+.activites {
+
+    &__item {
+        display: flex;
+        justify-content: space-between;
+        // flex-direction: row-reverse;
+    }
+    &__item:nth-child(odd) {
+        flex-direction: row-reverse;
+    }
+
+    &__des {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        width: 50%;
+    }
+    &__images {
+        width: calc(50% - 30px);
+    }
+
+    
+    &__text {
+        line-height: 2;
+        font-size: 16px;
+    }
+
+    &__text {
+        // width: calc(50% - 30px);
+    }
+    &__maintitle {
+        font-size: 37px;
+        color: #6FABE2;
+    }
+    &__subtitle {
+        font-size: 20px;
+        color: #6FABE2;
+        margin-top: -10px;
+        margin-bottom: 35px;
+    }
+}
+
+.enn {
+
+    &__title {
+        &-under {
+           
+        }
+        &-span {
+            font-size: 40px;
+        }
+    }
+
+    &__subtitle {
+        &-under {
+           
+            text-align: center;
+            margin-bottom: 40px;
+        }
+    }
+    &__text{
+        &-des {
+            font-size: 16px;
+        }
+    }
+}
+.access {
+    &__des {
+
+        &-text {
+            font-size: 16px;
+        }
+    }
+}

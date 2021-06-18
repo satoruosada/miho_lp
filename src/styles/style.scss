@@ -1,0 +1,27 @@
+@import 'modules/appear';
+@import 'modules/slider';
+@import 'modules/mobile-menu';
+@import 'modules/bg-color';
+
+@import "breakpoints/base";
+
+@media (min-width: 480px) {
+  @import "breakpoints/480up";
+}
+
+@media (min-width: 720px) {
+  @import "breakpoints/720up";
+}
+
+
+@media (min-width: 960px) {
+  @import "breakpoints/960up";
+}
+
+@media (min-width: 1280px) {
+  @import "breakpoints/1280up";
+}
+
+
+
+
